@@ -11,8 +11,8 @@
     <h2 align="center"> Personal Information</h2>
     <table align="left" cellpadding="5">
         <tr>
-            <td rowspan="6">
-                <img src="Zilinghan.jpg" width="200">
+            <td rowspan="8">
+                <a href="Zilinghan.jpg"><img src="Zilinghan.jpg" width="200"></a>
             </td>
             <td>Name</td>
             <td>Zilinghan Li</td>
@@ -37,6 +37,14 @@
 
         </tr>
         <tr>
+            <td>Github</td>
+            <td><a href="https://github.com/Zilinghan">https://github.com/Zilinghan</a></td>
+        </tr>
+        <tr>
+            <td>TOEFL</td>
+            <td><a href="toefl.pdf">105</a></td>
+        </tr>
+        <tr>
             <td>Phone</td>
             <td>+86 15132181124</td>
         </tr>
@@ -58,14 +66,15 @@
     <br /> 
     <br /> 
     <br /> 
-    <br /> 
+    <br />
+    <br />
     <!-- CV and Transcript  -->
-    <h2 align="center"> CV and Transcript (Under Construction)</h2>
+    <!-- <h2 align="center"> CV and Transcript (Under Construction)</h2> -->
     <!-- Projects -->
     <h2 align="center"> Selected Projects</h2>
     <h3>
         Investigation of MapReduce Algorithms on Streams using the
-BSP Bridging Model
+BSP Bridging Model (Under Construction)
     </h3>
     <ul>
         <li>Advisor: 
@@ -86,10 +95,75 @@ BSP Bridging Model
     </ul>
 
     <h3>FPGA based Game Design: Fruit Ninja</h3>
+
+    <table align="center">
+        <tr>
+            <th>Block Diagram</th>
+            <th>Single-Player Mode</th>
+            <th>Double-Player Mode</th>
+        </tr>
+        <tr>
+            <td>
+                <a href="FPGA_Design/final_block_diagram.png"><img src="FPGA_Design/final_block_diagram.png" height="310"></a>
+            </td>
+            <td>
+                <a href="FPGA_Design/Single_Player.mp4"><video src="FPGA_Design/Single_Player.mp4" width="420" height="310" controls></video></a>
+            </td>
+            <td>
+                <a href="FPGA_Design/Double_Player.mp4"><video src="FPGA_Design/Double_Player.mp4" width="420" height="310" controls></video></a>
+            </td>
+        </tr>
+    </table>
     <ul>
         <li>Advisor: <a href="http://person.zju.edu.cn/en/lichushan" target="_blank">Chushan Li</a>, ZJU-UIUC Institute</li>
         <li>Co-worker: <a href="https://xiwei-wang.github.io" target="_blank">Xiwei Wang</a></li>
-        <li>It is the final project of UIUC course ECE385: Digital System Laboratory. </li>
+        <li>It is the final project of UIUC course ECE385: Digital System Laboratory. The game is designed and implemented using System Verilog on FPGA.</li>
+        <li>The game has two mouse (one USB mouse and one PS2 mouse) as inputs and VGA display as outputs. The game supports both single-player mode and double-player mode. The video display of the motion of the fruits to be cut on the monitor and the mouse serves as "knife" to cut the fruit when colliding with the fruits</li>
+        <li>Features:
+            <ul>
+                <li>
+                    Correct interface with SRAM, Flash, USB mouse, PS2 mouse and VGA devices.
+                </li>
+                <li>
+                    Correct and smooth movements of the fruits in a parabolic curve with central rotations (via rotational matrices).
+                </li>
+                <li>
+                    Correct detection of the cutting process (collision between the mouse and the fruits).
+                </li>
+                <li>
+                    Random generation (accurately speaking, pseudo-random) of motion parameters of incoming fruits.
+                </li>
+                <li>
+                    Correct double player mode.
+                </li>
+            </ul>
+        </li>
     </ul>
+
+    <h2 align="center">Teaching Assistance Experience</h2>
+    <h3>Math 241: Calculus Ⅲ (Fall 2020)</h3>
+    <ul>
+        <li>Instructor: <a href="https://zjui.intl.zju.edu.cn/en/node/196800">Thomas Honold</a></li>
+        <li>Main Cotents: Basic Linear Algebra, Vector Functions, Function of Multi-Variables, Vector Fields.</li>
+        <li>Responsibility
+        <ul>
+            <li>Led a weekly two-hour discussion session to help students learn course materials and finish discussion sheets.</li>
+            <li>Grade weekly homework and exams.</li>
+            <li>Holding weekly office hour to provide supports to students.</li>
+        </ul>
+        </li>
+    </ul>
+    <h3><a href="https://wiki.illinois.edu/wiki/display/zjuiece120/Course+Info">ECE 120: Intro to Computing</a> (Spring 2021)</h3>
+    <ul>
+        <li>Instructor: <a href="http://www.ncsa.illinois.edu/People/kindr/">Volodymyr Kindratenko</a></li>
+        <li>Main Cotents: Bit Representation, C Programming, Transistors to Circuits, Finite State Machines, LC-3 (Little Computer) and Programming.</li>
+        <li>Responsibility
+        <ul>
+            <li>Led a weekly online-hour discussion session for off-campus internatinal students to help them learn course materials and finish discussion sheets.</li>
+            <li>Grade weekly homework, discussions and exams.</li>
+            <li>Holding weekly office hour to provide supports to students.</li>
+        </ul>
+        </li>
+    </ul>    
 </body>
 </html>
