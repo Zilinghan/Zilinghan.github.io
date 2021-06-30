@@ -1,309 +1,192 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Zilinghan Li's Personal Page</title>
-    <link rel="stylesheet" href="style.css" />
+
+  <title>Zilinghan Li's Homepage</title>
+
+  <link rel="stylesheet" href="w3.css">
+
+  <style>
+  .w3-sidebar a {font-family: "Roboto", sans-serif}
+  body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+  </style>
+
+  <link rel="icon" type="image/png" href="images/icons.png">
 </head>
 
-<body>
-    <h1 align="center">Zilinghan Li's Personal Page</h1>
-    <!-- Personal Information -->
-    <h2 align="center">Personal Information</h2>
 
-    <table align="left" cellpadding="5">
-        <tr>
-            <td rowspan="8">
-                <a href="Zilinghan.jpg"><img src="Zilinghan.jpg" width="200" /></a>
-            </td>
-            <td>Name</td>
-            <td>Zilinghan Li</td>
-        </tr>
-        <tr>
-            <td>Email</td>
-            <td>
-                <a href="mailto:Zilinghan.18@intl.zju.edu.cn">
-                    Zilinghan.18@intl.zju.edu.cn </a><br />
-                <a href="mailto:zl52@illinois.edu"> zl52@illinois.edu</a>
-            </td>
-        </tr>
-        <tr>
-            <td>University</td>
-            <td>
-                Zhejiang University
-                <a href="https://zjui.intl.zju.edu.cn" target="_blank">
-                    ZJU-UIUC Institute</a>
-            </td>
-        </tr>
-        <tr>
-            <td>Major</td>
-            <td>Computer Engineering</td>
-        </tr>
-        <tr>
-            <td>Github</td>
-            <td>
-                <a href="https://github.com/Zilinghan" target="_blank">https://github.com/Zilinghan</a>
-            </td>
-        </tr>
-        <tr>
-            <td>TOEFL</td>
-            <td><a href="toefl.pdf">105</a></td>
-        </tr>
-        <tr>
-            <td>Phone</td>
-            <td>+86 15132181124</td>
-        </tr>
-        <tr>
-            <td>Address</td>
-            <td>
-                718 East Haizhou Street, Haining, Jiaxing, Zhejiang province, China
-            </td>
-        </tr>
-    </table>
+<body class="w3-content" style="max-width:1000px">
 
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <!-- CV and Transcript  -->
-    <!-- <h2 align="center"> CV and Transcript (Under Construction)</h2> -->
-    <!-- Projects -->
-    <h2 align="center">Selected Projects (Under Construction...)</h2>
-    <!-- <h3>
-        Investigation of MapReduce Algorithms on Streams using the BSP Bridging
-        Model <a href=#>[Paper]</a> (Under Construction)
-    </h3>
-    <ul>
-        <li>
-            Advisor:
-            <a href="https://zjui.intl.zju.edu.cn/en/content/874774" target="_blank">Klaus-Dieter Schewe</a>, ZJU-UIUC
-            Institute
-        </li> -->
-    <!-- <li>
-            Classifying stream queries into three tpyes according to their
-            concatenation properties: memoryless, semi-memoryless and memorable.
-        </li>
-        <li>
-            Implementing memoryless and semi-memoryless stream queries using
-            MapReduce Algorithm in the spirit of BSP parallel computaion model.
-        </li>
-        <li>
-            For memorable stream queries, the limit case of semi-memoryless stream
-            queries, is more of theoretical interests. To deal with such case in
-            theory, much more agents are required in the parallel compuation, so we
-            extend the expressiveness of BSP model and develop a new behavioral
-            theory of BSP algorithm with infinite number of available agents.
-        </li> -->
-    <!-- <li>
-            <strong>Abstract:</strong> MapReduce is an algorithm for processing large data sets in parallel
-            and bulk synchronous parallel (BSP) model is a
-            model for parallel computation consisting of alternating
-            computation and communication phases.
-            In this article, we extend the normal execution of MapReduce from processing large finite data sets to
-            processing stream queries with input data stream assumed to continue indefinitely.
-            We first propose a classification of stream queries to divide stream queries into three classes:
-            memoryless, semi-memoryless and memorable, and provide the implementation models
-            for each class using MapReduce based on BSP. In addition, since handling some stream queries requires a
-            large amount of computing sources, the BSP computation model is extended to Infinite-Agent BSP (Inf-Ag-BSP)
-            computation model, which can capture unbounded number of agents though only finitely many of them will be
-            simultaneously activated. A behavioral theory is developed for Inf-Ag-BSP model based on the behavioral
-            theory of general BSP model, which consists of the axiomatization, the definition of Infinite-Agent BSP
-            abstract state machine (Inf-Ag-BSP-ASM) and the proof that such ASM captures Inf-Ag-BSP computations.
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-collapse w3-top w3-right" style="z-index:3;width:150px;color: #72787a" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-16">
+    <h3><b>Zilinghan</b></h3>
+  </div>
+  <div class="w3-padding-64 w3-text-light-grey w3-large" style="font-weight:bold">
+    <a href="#home" class="w3-bar-item w3-button">Home</a>
+    <a href="#projects" class="w3-bar-item w3-button">Projects</a>
+    <a href="#teaching" class="w3-bar-item w3-button">Teaching</a>
+  </div>
+</nav>
 
-        </li>
-    </ul> -->
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+  <div class="w3-bar-item w3-padding-24">Zilinghan</div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right"  style="font-stretch: extra-expanded;" onclick="w3_open()"><b>≡</b></a>
+  </div>
+</header>
 
-    <h3>
-        FPGA based Game Design: Fruit Ninja
-        <a href="https://github.com/Zilinghan/ECE385-Final-Project" target="_blank">[Code]</a>
-    </h3>
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
-    <table align="center">
-        <tr>
-            <th>Block Diagram</th>
-            <th>Single-Player Mode</th>
-            <th>Double-Player Mode</th>
-        </tr>
-        <tr>
-            <td>
-                <a href="FPGA_Design/final_block_diagram.png"><img src="FPGA_Design/final_block_diagram.png"
-                        height="310" /></a>
-            </td>
-            <td>
-                <a href="FPGA_Design/Single_Player.mp4"><video src="FPGA_Design/Single_Player.mp4" width="420"
-                        height="310" controls></video></a>
-            </td>
-            <td>
-                <a href="FPGA_Design/Double_Player.mp4"><video src="FPGA_Design/Double_Player.mp4" width="420"
-                        height="310" controls></video></a>
-            </td>
-        </tr>
-    </table>
-    <ul>
-        <li>
-            Advisor:
-            <a href="http://person.zju.edu.cn/en/lichushan" target="_blank">Chushan Li</a>, ZJU-UIUC Institute
-        </li>
-        <li>
-            Co-worker:
-            <a href="https://xiwei-wang.github.io" target="_blank">Xiwei Wang</a>
-        </li>
-        <li>
-            It is the final project of UIUC course ECE385: Digital System
-            Laboratory. The game is designed and implemented using System Verilog on
-            FPGA.
-        </li>
-        <li>
-            The game has two mouse (one USB mouse and one PS2 mouse) as inputs and
-            VGA display as outputs. The game supports both single-player mode and
-            double-player mode. The video display of the motion of the fruits to be
-            cut on the monitor and the mouse serves as "knife" to cut the fruit when
-            colliding with the fruits
-        </li>
-        <li>
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:150px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+
+<!-- The Home Section -->
+    <div class="w3-container w3-center w3-padding-32" id="home">
+      <img style="width: 80%;max-width: 320px" alt="profile photo" src="images/lzlh.png">
+      <h1>Zilinghan Li</h1>
+        <p class="w3-justify" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;max-width:600px">
+          I am an undergraduate student in <a href="https://zjui.intl.zju.edu.cn/en/"  target="_blank"> ZJUI Institute</a>, which is a joint institute of <a href="https://www.zju.edu.cn/english/"  target="_blank">Zhejiang University</a> and <a href="https://illinois.edu/"  target="_blank">University of Illinois Urbana-Champaign</a>. I am majored in Computer Engineering.
+        </p>
+        <p class="w3-center">
+          <a href="zilinghan.18@intl.zju.edu.cn">Email</a> &nbsp/&nbsp
+          <a href="data/cv.pdf">CV</a>
+        </p>
+        </tbody></table>
+  </div>
+
+<!-- The Projects Section -->
+  <div class="w3-container w3-padding-32" id="projects">
+    <h2>Projects</h2>
+        <h4><li>Unbounded Barrier-Synchronized Concurrent ASMs</li></h4>
+        <img style="width:48%;" src="images/Memoryless.png"> &nbsp&nbsp <img style="width:48%;" src="images/Semi_Memoryless.png">
+        <p class="w3-justify">
+        <a style="color: #447ec9" href="https://doi.org/10.1007/978-3-030-77543-8_1"  target="_blank">Paper</a> | <a style="color: #447ec9" href="data/presentation_Zilinghan.pdf" target="_blank">Slides</a> | Advised by <a style="color: #447ec9" href="https://scholar.google.com/citations?user=e74FobUAAAAJ" target="_blank">Klaus-Dieter Schewe</a>
+        </p>
+        <p class="w3-justify">
+          MapReduce is an algorithm for processing large data sets in parallel and bulk synchronous parallel (BSP) model is a model for parallel computation consisting of alternating computation and communication phases. In this article, we extend the normal execution of MapReduce from processing large finite data sets to processing stream queries with input data stream assumed to continue indefinitely. We first propose a classification of stream queries to divide stream queries into three classes: memoryless, semi-memoryless and memorable, and provide the implementation models for each class using MapReduce based on BSP. In addition, since handling some stream queries requires a large amount of computing sources, the BSP computation model is extended to Infinite-Agent BSP (Inf-Ag-BSP) computation model, which can capture unbounded number of agents though only finitely many of them will be simultaneously activated. A behavioral theory is developed for Inf-Ag-BSP model based on the behavioral theory of general BSP model, which consists of the axiomatization, the definition of Infinite-Agent BSP abstract state machine (Inf-Ag-BSP-ASM) and the proof that such ASM captures Inf-Ag-BSP computations.
+        </p> 
+
+        <h4><li>FPGA based Game Design: Fruit Ninja</li></h4>
+        <img style="width:70%;" src="images/final_block_diagram.png">
+        <p class="w3-justify">
+          <a style="color: #447ec9" href="https://github.com/Zilinghan/ECE385-Final-Project" target="_blank">Code</a> | <a style="color: #447ec9" href="images/Single_Player.mp4" target="_blank">Demo-Single Player</a> | <a style="color: #447ec9" href="images/Double_Player.mp4" target="_blank">Demo-Double Player</a> | Advised by <a style="color: #447ec9" href="http://person.zju.edu.cn/en/lichushan" target="_blank">Chushan Li</a>
+          </p>
+        <p class="w3-justify">
+          It is the final project of UIUC course ECE385: Digital System Laboratory. The game is designed and implemented using System Verilog on FPGA. The game has two mouse (one USB mouse and one PS2 mouse) as inputs and VGA display as outputs. The game supports both single-player mode and double-player mode. The video display of the motion of the fruits to be cut on the monitor and the mouse serves as "knife" to cut the fruit when colliding with the fruits
+
+          
+          <ul>
             Features:
-            <ul>
-                <li>
-                    Correct interface with SRAM, Flash, USB mouse, PS2 mouse and VGA
-                    devices.
-                </li>
-                <li>
-                    Correct and smooth movements of the fruits in a parabolic curve with
-                    central rotations (via rotational matrices).
-                </li>
-                <li>
-                    Correct detection of the cutting process (collision between the
-                    mouse and the fruits).
-                </li>
-                <li>
-                    Random generation (accurately speaking, pseudo-random) of motion
-                    parameters of incoming fruits.
-                </li>
-                <li>Correct double player mode.</li>
-            </ul>
-        </li>
-    </ul>
+              <li>
+                  Correct interface with SRAM, Flash, USB mouse, PS2 mouse and VGA
+                  devices.
+              </li>
+              <li>
+                  Correct and smooth movements of the fruits in a parabolic curve with
+                  central rotations (via rotational matrices).
+              </li>
+              <li>
+                  Correct detection of the cutting process (collision between the
+                  mouse and the fruits).
+              </li>
+              <li>
+                  Random generation (accurately speaking, pseudo-random) of motion
+                  parameters of incoming fruits.
+              </li>
+              <li>Correct double player mode.</li>
+          </ul>
+        </p>
 
-    <h2 align="center">Teaching Assistance Experience</h2>
-    <h3>Math 241: Calculus Ⅲ (Fall 2020)</h3>
-    <ul>
+        <h4><li>Illinix 391 - A Linux-like Operating System for i386 CPU</li></h4>
+        <!-- <p class="w3-justify">
+        <a style="color: #447ec9" href="https://www.huaweicloud.com/intl/en-us/HDC.Cloud.html">Huawei Developer Conference (HDC) 2020</a> | <a style="color: #447ec9" href="https://developer.huaweicloud.com/exhibition/Atlas_neural_style.html">Online Demo</a>
+        </p> -->
+        <p class="w3-justify">
+          It is the final project of UIUC course ECE391: Computer Systems Engineering. We developed the core of a Linux-like operating system from scratch with C and x86 Assembly. 
+          <ul>
+            Features:
+            <li>
+              Implemented basic functionalities such as basic devices, interrupts, loader, multiple shells, and schedulers
+            </li>
+            <li>
+              Implemented several advanced functionalities such as dynamic memory allocation, random number, writable file system, mouse, wav file play, and status bar
+            </li>
+            <li>
+              Implemented a simplified vim
+            </li>
+          </ul>
+        </p>  
+
+        <h4><li>Contrastive Learning & Active Learning (To Be Filled...)</li></h4>
+        <h4><li>Large-scale Missing Data Imputation System (To Be Filled...)</li></h4>
+  </div>
+  
+
+ <!-- The Teaching Section -->
+  <div class="w3-container w3-padding-32" id="teaching">
+    <h2>Teaching</h2>
+      <p class="w3-left-align" style="line-height:200%">
+        I have two teaching assistance experiences in my junior year. The main responsibilities are: holding a weekly discussion session for students to help them learn course materials and finish discussion sheets, grading weekly homework and exams, holding weekly office hour to provide supports to students.
+      </p>
+      <h4><li>Math 241: Calculus Ⅲ (Fall 2020)</li></h4>
+      <ul>
         <li>
             Instructor:
-            <a href="https://zjui.intl.zju.edu.cn/en/node/196800" target="_blank">Thomas Honold</a>, ZJU-UIUC Institute
+            <a style="color: #447ec9" href="https://zjui.intl.zju.edu.cn/en/node/196800" target="_blank">Thomas Honold</a>, ZJU-UIUC Institute
         </li>
         <li>
             Main Cotents: Basic Linear Algebra, Vector Functions, Function of
             Multi-Variables, Vector Fields.
         </li>
-        <li>
-            Responsibility
-            <ul>
-                <li>
-                    Led a weekly two-hour discussion session to help students learn
-                    course materials and finish discussion sheets.
-                </li>
-                <li>Grade weekly homework and exams.</li>
-                <li>Holding weekly office hour to provide supports to students.</li>
-            </ul>
-        </li>
-    </ul>
-    <h3>
-        <a href="https://wiki.illinois.edu/wiki/display/zjuiece120/Course+Info" target="_blank">ECE 120: Intro to
-            Computing</a>
-        (Spring 2021)
-    </h3>
-    <ul>
+      </ul>
+      <h4><li>ECE 120: Intro to Computing (Spring 2021)</li></h4>
+      <ul>
         <li>
             Instructor:
-            <a href="http://www.ncsa.illinois.edu/People/kindr/" target="_blank">Volodymyr Kindratenko</a>, UIUC
+            <a style="color: #447ec9" href="http://www.ncsa.illinois.edu/People/kindr/" target="_blank">Volodymyr Kindratenko</a>, UIUC
         </li>
         <li>
             Main Cotents: Bit Representation, C Programming, Transistors to
             Circuits, Finite State Machines, LC-3 (Little Computer) and Programming.
         </li>
-        <li>
-            Responsibility
-            <ul>
-                <li>
-                    Led a weekly online-hour discussion session for off-campus
-                    internatinal students to help them learn course materials and finish
-                    discussion sheets.
-                </li>
-                <li>Grade weekly homework, discussions and exams.</li>
-                <li>Holding weekly office hour to provide supports to students.</li>
-            </ul>
-        </li>
-    </ul>
-    <h2 align="center">Personal Life</h2>
-    <h3>A Football Lover</h3>
-    <ul>
-        <li>
-            Champion of Sanhao Cup of Zhejiang University (2019)
-        </li>
-        <li>
-            Champion of Xinsheng Cup of Zhejiang University Internatinal Campus as Captian (2018)
-        </li>
-        <li>
-            Champion of Xinsheng Cup of Zhejiang University Internatinal Campus (2018)
-        </li>
-    </ul>
-    <table align="center">
-        <tr>
-            <td>
-                <a href="Football/fb1.jpg"><img src="Football/fb1.jpg" width="360" height="240" /></a>
-            </td>
-            <td>
-                <a href="Football/fb2.png"><img src="Football/fb2.png" width="360" height="240" /></a>
-            </td>
-            <td>
-                <a href="Football/fb3.jpg"><img src="Football/fb3.jpg" width="360" height="240" /></a>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a href="Football/fb4.jpg"><img src="Football/fb4.jpg" width="360" height="240" /></a>
-            </td>
-            <td>
-                <a href="Football/fb5.jpg"><img src="Football/fb5.jpg" width="360" height="240" /></a>
-            </td>
-            <td>
-                <a href="Football/fb6.jpg"><img src="Football/fb6.jpg" width="360" height="240" /></a>
-            </td>
-        </tr>
-    </table>
-    <h3>Volunteer Teaching</h3>
-    <ul>
-        <li>
-            Volunteer teaching in Guilin, Guangxi Province.
-        </li>
-    </ul>
 
-    <table align="center">
-        <tr>
-            <td>
-                <a href="Voluteer_Teaching/vt1.jpg"><img src="Voluteer_Teaching/vt1.jpg" width="360" height="240" /></a>
-            </td>
-            <td>
-                <a href="Voluteer_Teaching/vt2.jpg"><img src="Voluteer_Teaching/vt2.jpg" width="360" height="240" /></a>
-            </td>
-            <td>
-                <a href="Voluteer_Teaching/vt3.jpg"><img src="Voluteer_Teaching/vt3.jpg" width="360" height="240" /></a>
-            </td>
-        </tr>
-    </table>
+    </ul>
+  </div>
+</div>
+
+
+<script>
+  // Accordion 
+  function myAccFunc() {
+    var x = document.getElementById("demoAcc");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else {
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+  
+  // Click on the "Jeans" link on page load to open the accordion for demo purposes
+  document.getElementById("myBtn").click();
+  
+  
+  // Open and close sidebar
+  function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+  }
+   
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+  }
+  </script>
+
 </body>
-
 </html>
