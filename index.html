@@ -22,10 +22,12 @@
 <nav class="w3-sidebar w3-bar-block w3-black w3-collapse w3-top w3-right" style="z-index:3;width:150px;color: #72787a" id="mySidebar">
   <div class="w3-container w3-display-container w3-padding-16">
     <h3><b>Zilinghan</b></h3>
+    <img src="images/UIUC.png" width="118px" height="118px">
+    <img src="images/ZJU_new.jpg" width="118px" height="118px">
   </div>
-  <div class="w3-padding-64 w3-text-light-grey w3-large" style="font-weight:bold">
+  <div class="w3-padding-8 w3-text-light-grey w3-large" style="font-weight:bold">
     <a href="#home" class="w3-bar-item w3-button">Home</a>
-    <a href="#projects" class="w3-bar-item w3-button">Projects</a>
+    <a href="#research" class="w3-bar-item w3-button">Research</a>
     <a href="#teaching" class="w3-bar-item w3-button">Teaching</a>
   </div>
 </nav>
@@ -51,29 +53,48 @@
       <img style="width: 80%;max-width: 320px" alt="profile photo" src="images/lzlh.png">
       <h1>Zilinghan Li</h1>
         <p class="w3-justify" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;max-width:600px">
-          I am an undergraduate student in <a href="https://zjui.intl.zju.edu.cn/en/"  target="_blank"> ZJUI Institute</a>, which is a joint institute of <a href="https://www.zju.edu.cn/english/"  target="_blank">Zhejiang University</a> and <a href="https://illinois.edu/"  target="_blank">University of Illinois Urbana-Champaign</a>. I am majored in Computer Engineering.
+          I am a senior student in <a href="https://illinois.edu/"  target="_blank">University of Illinois Urbana-Champaign</a> and <a href="https://www.zju.edu.cn/english/"  target="_blank">Zhejiang University</a>. I am majored in Computer Engineering. I am interested in the <strong>applications of machine learning and deep learning</strong>, and I plan to pursue a master's degree in this area.
         </p>
         <p class="w3-center">
-          <a href="mailto:zilinghan.18@intl.zju.edu.cn">Email</a> &nbsp/&nbsp
+          <a href="mailto:zl52@illinois.edu">Email</a> &nbsp/&nbsp
           <a href="data/cv.pdf" target="_blank">CV</a>
         </p>
         </tbody></table>
   </div>
 
 <!-- The Projects Section -->
-  <div class="w3-container w3-padding-32" id="projects">
-    <h2>Projects</h2>
-        <h4><li>Unbounded Barrier-Synchronized Concurrent ASMs</li></h4>
-        <img style="width:48%;" src="images/Memoryless.png"> &nbsp&nbsp <img style="width:48%;" src="images/Semi_Memoryless.png">
+  <div class="w3-container w3-padding-32" id="research">
+    <h3><strong>Research</strong></h3>
+        <h5><strong>ActiveMatch: End-to-end Semi-supervised Active Representation Learning</strong></h5>
+        <img style="width:75%;" src="data/network.jpg"> &nbsp&nbsp <img style="width:18%;" src="data/tsne.jpg">
+        <p class="w3-justify">
+        <a style="color: #447ec9" href="https://arxiv.org/pdf/2110.02521.pdf"  target="_blank">Paper</a> | Advised by Professor <a style="color: #447ec9" href="https://person.zju.edu.cn/en/gaoangwang" target="_blank">Gaoang Wang</a>
+        </p>
+        <p class="w3-justify">
+          <strong>Semi-supervised learning</strong> (SSL) is an efficient method to train models with both labeled and unlabeled data. However, constrained by the limited number of labels, the learned representations of SSL are ambiguous and not distinguishable for inter-class samples. Moreover, the performance of SSL is also largely dependent on the model initialization. To deal with the drawbacks of SSL, we propose a novel end-to-end representation learning method, namely ActiveMatch, which combines SSL with <strong>contrastive learning</strong> and <strong>active learning</strong> to fully leverage the limited labels. Starting from a small amount of labeled data with unsupervised contrastive learning as a warm-up, ActiveMatch then combines SSL and supervised contrastive learning, and actively selects the most representative samples for labeling during the training, resulting in better representations towards the classification. Compared with MixMatch and FixMatch, we show that ActiveMatch achieves the state-of-the-art performance, with 89.24 accuracy on CIFAR-10 with 100 collected labels, and 92.20 accuracy with 200 collected labels.
+        </p> 
+
+
+        <h5><strong>Movie Characters Recognition using Deep Learning</strong></h5>
+        <img style="width:68%;" src="images/video_recog.gif"> 
+        <p class="w3-justify">
+
+        Advised by Professor <a style="color: #447ec9" href="http://www.ncsa.illinois.edu/People/kindr/" target="_blank">Volodymyr Kindratenko</a>
+        </p>
+        <p class="w3-justify">
+          We developed a deep learning network which can return the time slots in which each character appears. This model will be used as a tool to assist movie analysis by automatic generation of the statistical data of the movie. The gif above is a sample output from a <strong>unsupervised</strong> model. We are now working on improving the recognition accuracy by applying the <strong>semi-supervised learning</strong> methods to the network.
+        </p> 
+
+        <h5><strong>Unbounded Barrier-Synchronized Concurrent ASMs</strong></h5>
+        <img style="width:78%;" src="images/mapreduce.JPG"> 
         <p class="w3-justify">
         <a style="color: #447ec9" href="https://doi.org/10.1007/978-3-030-77543-8_1"  target="_blank">Paper</a> | <a style="color: #447ec9" href="data/presentation_Zilinghan.pdf" target="_blank">Slides</a> | Advised by <a style="color: #447ec9" href="https://scholar.google.com/citations?user=e74FobUAAAAJ" target="_blank">Klaus-Dieter Schewe</a>
         </p>
         <p class="w3-justify">
-          MapReduce is an algorithm for processing large data sets in parallel and bulk synchronous parallel (BSP) model is a model for parallel computation consisting of alternating computation and communication phases. In this article, we extend the normal execution of MapReduce from processing large finite data sets to processing stream queries with input data stream assumed to continue indefinitely. We first propose a classification of stream queries to divide stream queries into three classes: memoryless, semi-memoryless and memorable, and provide the implementation models for each class using MapReduce based on BSP. In addition, since handling some stream queries requires a large amount of computing sources, the BSP computation model is extended to Infinite-Agent BSP (Inf-Ag-BSP) computation model, which can capture unbounded number of agents though only finitely many of them will be simultaneously activated. A behavioral theory is developed for Inf-Ag-BSP model based on the behavioral theory of general BSP model, which consists of the axiomatization, the definition of Infinite-Agent BSP abstract state machine (Inf-Ag-BSP-ASM) and the proof that such ASM captures Inf-Ag-BSP computations.
+          <strong>MapReduce</strong> is an algorithm for processing large data sets in parallel and <strong> synchronous parallel</strong> (BSP) model is a model for parallel computation consisting of alternating computation and communication phases. We extend the normal execution of MapReduce from processing large finite data sets to processing stream queries with input data stream assumed to continue indefinitely. We first propose a classification of stream queries to divide stream queries into three classes: memoryless, semi-memoryless and memorable, and provide the implementation models for each class using MapReduce based on BSP. In addition, since handling some stream queries requires a large amount of computing sources, the BSP computation model is extended to <strong>Infinite-Agent BSP</strong> (Inf-Ag-BSP) computation model, which can capture unbounded number of agents though only finitely many of them will be simultaneously activated. A behavioral theory is developed for Inf-Ag-BSP model based on the behavioral theory of general BSP model, which consists of the axiomatization, the definition of Infinite-Agent BSP abstract state machine (Inf-Ag-BSP-ASM) and the proof that such ASM captures Inf-Ag-BSP computations.
         </p> 
 
-        <h4><li>FPGA based Game Design: Fruit Ninja</li></h4>
-        <img style="width:70%;" src="images/final_block_diagram.png">
+        <h5><strong>FPGA based Game Design: Fruit Ninja</strong></h5>
         <p class="w3-justify">
           <a style="color: #447ec9" href="https://github.com/Zilinghan/ECE385-Final-Project" target="_blank">Code</a> | <a style="color: #447ec9" href="images/Single_Player.mp4" target="_blank">Demo-Single Player</a> | <a style="color: #447ec9" href="images/Double_Player.mp4" target="_blank">Demo-Double Player</a> | Advised by <a style="color: #447ec9" href="http://person.zju.edu.cn/en/lichushan" target="_blank">Chushan Li</a>
           </p>
@@ -103,50 +124,25 @@
           </ul>
         </p>
 
-        <h4><li>Illinix 391 - A Linux-like Operating System for i386 CPU</li></h4>
-        <!-- <p class="w3-justify">
-        <a style="color: #447ec9" href="https://www.huaweicloud.com/intl/en-us/HDC.Cloud.html">Huawei Developer Conference (HDC) 2020</a> | <a style="color: #447ec9" href="https://developer.huaweicloud.com/exhibition/Atlas_neural_style.html">Online Demo</a>
-        </p> -->
-        <p class="w3-justify">
-          It is the final project of UIUC course ECE391: Computer Systems Engineering. We developed the core of a Linux-like operating system from scratch with C and x86 Assembly. 
-          <ul>
-            Features:
-            <li>
-              Implemented basic functionalities such as basic devices, interrupts, loader, multiple shells, and schedulers
-            </li>
-            <li>
-              Implemented several advanced functionalities such as dynamic memory allocation, random number, writable file system, mouse, wav file play, and status bar
-            </li>
-            <li>
-              Implemented a simplified vim
-            </li>
-          </ul>
-        </p>  
-
-        <h4><li>Contrastive Learning & Active Learning (To Be Filled...)</li></h4>
-        <h4><li>Large-scale Missing Data Imputation System (To Be Filled...)</li></h4>
   </div>
   
 
  <!-- The Teaching Section -->
   <div class="w3-container w3-padding-32" id="teaching">
-    <h2>Teaching</h2>
+    <h3><strong>Teaching</strong></h3>
       <p class="w3-left-align" style="line-height:200%">
         I have two teaching assistance experiences in my junior year. The main responsibilities are: holding a weekly discussion session for students to help them learn course materials and finish discussion sheets, grading weekly homework and exams, holding weekly office hour to provide supports to students.
       </p>
-      <h4><li>Math 241: Calculus Ⅲ (Fall 2020)</li></h4>
-      <ul>
+      <h5><strong>Math 241: Calculus Ⅲ (Fall 2020)</strong></h5>
         <li>
             Instructor:
-            <a style="color: #447ec9" href="https://zjui.intl.zju.edu.cn/en/node/196800" target="_blank">Thomas Honold</a>, ZJU-UIUC Institute
+            Thomas Honold, ZJU-UIUC Institute
         </li>
         <li>
             Main Cotents: Basic Linear Algebra, Vector Functions, Function of
             Multi-Variables, Vector Fields.
         </li>
-      </ul>
-      <h4><li>ECE 120: Intro to Computing (Spring 2021)</li></h4>
-      <ul>
+      <h5><strong>ECE 120: Intro to Computing (Spring 2021)</strong></h5>
         <li>
             Instructor:
             <a style="color: #447ec9" href="http://www.ncsa.illinois.edu/People/kindr/" target="_blank">Volodymyr Kindratenko</a>, UIUC
@@ -155,8 +151,6 @@
             Main Cotents: Bit Representation, C Programming, Transistors to
             Circuits, Finite State Machines, LC-3 (Little Computer) and Programming.
         </li>
-
-    </ul>
   </div>
 </div>
 
