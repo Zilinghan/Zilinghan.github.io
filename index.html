@@ -29,6 +29,7 @@
     <a href="#home" class="w3-bar-item w3-button">Home</a>
     <a href="#research" class="w3-bar-item w3-button">Research</a>
     <a href="#teaching" class="w3-bar-item w3-button">Teaching</a>
+    <a href="#life" class="w3-bar-item w3-button">Life</a>
   </div>
 </nav>
 
@@ -53,7 +54,7 @@
       <img style="width: 80%;max-width: 320px" alt="profile photo" src="images/lzlh.png">
       <h1>Zilinghan Li</h1>
         <p class="w3-justify" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;max-width:600px">
-          I am a senior student in <a href="https://illinois.edu/"  target="_blank">University of Illinois Urbana-Champaign</a> and <a href="https://www.zju.edu.cn/english/"  target="_blank">Zhejiang University</a>. I am majored in Computer Engineering. I am interested in the <strong>applications of machine learning and deep learning</strong>, and I plan to pursue a master's degree in this area.
+          I am a senior student from <a href="https://illinois.edu/"  target="_blank">University of Illinois Urbana-Champaign</a> and <a href="https://www.zju.edu.cn/english/"  target="_blank">Zhejiang University</a>. I am majored in Computer Engineering. I am interested in the <strong>applications of machine learning and deep learning</strong>, and I plan to pursue a master's degree in this area.
         </p>
         <p class="w3-center">
           <a href="mailto:zl52@illinois.edu">Email</a> &nbsp/&nbsp
@@ -65,7 +66,7 @@
 <!-- The Projects Section -->
   <div class="w3-container w3-padding-32" id="research">
     <h3><strong>Research</strong></h3>
-        <h5><strong>ActiveMatch: End-to-end Semi-supervised Active Representation Learning</strong></h5>
+        <h5 style="color: #447ec9"><strong>ActiveMatch: End-to-end Semi-supervised Active Representation Learning</strong></h5>
         <img style="width:75%;" src="data/network.jpg"> &nbsp&nbsp <img style="width:18%;" src="data/tsne.jpg">
         <p class="w3-justify">
         <a style="color: #447ec9" href="https://arxiv.org/pdf/2110.02521.pdf"  target="_blank">Paper</a> | Advised by Professor <a style="color: #447ec9" href="https://person.zju.edu.cn/en/gaoangwang" target="_blank">Gaoang Wang</a>
@@ -75,17 +76,17 @@
         </p> 
 
 
-        <h5><strong>Movie Characters Recognition using Deep Learning</strong></h5>
+        <h5 style="color: #447ec9"><strong>Movie Characters Recognition using Deep Learning</strong></h5>
         <img style="width:68%;" src="images/video_recog.gif"> 
         <p class="w3-justify">
 
         Advised by Professor <a style="color: #447ec9" href="http://www.ncsa.illinois.edu/People/kindr/" target="_blank">Volodymyr Kindratenko</a>
         </p>
         <p class="w3-justify">
-          We developed a deep learning network which can return the time slots in which each character appears. This model will be used as a tool to assist movie analysis by automatic generation of the statistical data of the movie. The gif above is a sample output from a <strong>unsupervised</strong> model. We are now working on improving the recognition accuracy by applying the <strong>semi-supervised learning</strong> methods to the network.
+          We developed a deep learning network to generate the time slots in which each character appears. This model will be used as a tool to assist movie analysis by the automatic generation of the statistical data of the movie. The gif above is a sample output from an <strong>unsupervised</strong> model. We are now working on improving the recognition accuracy by applying the <strong>semi-supervised learning</strong> methods to the network.
         </p> 
 
-        <h5><strong>Unbounded Barrier-Synchronized Concurrent ASMs</strong></h5>
+        <h5 style="color: #447ec9"><strong>Unbounded Barrier-Synchronized Concurrent ASMs</strong></h5>
         <img style="width:78%;" src="images/mapreduce.JPG"> 
         <p class="w3-justify">
         <a style="color: #447ec9" href="https://doi.org/10.1007/978-3-030-77543-8_1"  target="_blank">Paper</a> | <a style="color: #447ec9" href="data/presentation_Zilinghan.pdf" target="_blank">Slides</a> | Advised by <a style="color: #447ec9" href="https://scholar.google.com/citations?user=e74FobUAAAAJ" target="_blank">Klaus-Dieter Schewe</a>
@@ -94,15 +95,13 @@
           <strong>MapReduce</strong> is an algorithm for processing large data sets in parallel and <strong> synchronous parallel</strong> (BSP) model is a model for parallel computation consisting of alternating computation and communication phases. We extend the normal execution of MapReduce from processing large finite data sets to processing stream queries with input data stream assumed to continue indefinitely. We first propose a classification of stream queries to divide stream queries into three classes: memoryless, semi-memoryless and memorable, and provide the implementation models for each class using MapReduce based on BSP. In addition, since handling some stream queries requires a large amount of computing sources, the BSP computation model is extended to <strong>Infinite-Agent BSP</strong> (Inf-Ag-BSP) computation model, which can capture unbounded number of agents though only finitely many of them will be simultaneously activated. A behavioral theory is developed for Inf-Ag-BSP model based on the behavioral theory of general BSP model, which consists of the axiomatization, the definition of Infinite-Agent BSP abstract state machine (Inf-Ag-BSP-ASM) and the proof that such ASM captures Inf-Ag-BSP computations.
         </p> 
 
-        <h5><strong>FPGA based Game Design: Fruit Ninja</strong></h5>
+        <h5 style="color: #447ec9"><strong>FPGA based Game Design: Fruit Ninja</strong></h5>
         <p class="w3-justify">
           <a style="color: #447ec9" href="https://github.com/Zilinghan/ECE385-Final-Project" target="_blank">Code</a> | <a style="color: #447ec9" href="images/Single_Player.mp4" target="_blank">Demo-Single Player</a> | <a style="color: #447ec9" href="images/Double_Player.mp4" target="_blank">Demo-Double Player</a> | Advised by <a style="color: #447ec9" href="http://person.zju.edu.cn/en/lichushan" target="_blank">Chushan Li</a>
           </p>
         <p class="w3-justify">
-          It is the final project of UIUC course ECE385: Digital System Laboratory. The game is designed and implemented using System Verilog on FPGA. The game has two mouse (one USB mouse and one PS2 mouse) as inputs and VGA display as outputs. The game supports both single-player mode and double-player mode. The video display of the motion of the fruits to be cut on the monitor and the mouse serves as "knife" to cut the fruit when colliding with the fruits
-
-          
-          <ul>
+          It is the final project of UIUC course ECE385: Digital System Laboratory. The game is designed and implemented using System Verilog on FPGA. The game has two mouse (one USB mouse and one PS2 mouse) as inputs and VGA display as outputs. The game supports both <strong>single-player mode</strong> and <strong>double-player mode</strong>. The video display of the motion of the fruits to be cut on the monitor and the mouse serves as "knife" to cut the fruit when colliding with the fruits. <strong>You can watch the demo videos for both modes by clicking the corresponding links above.</strong>
+          <!-- <ul>
             Features:
               <li>
                   Correct interface with SRAM, Flash, USB mouse, PS2 mouse and VGA
@@ -121,7 +120,7 @@
                   parameters of incoming fruits.
               </li>
               <li>Correct double player mode.</li>
-          </ul>
+          </ul> -->
         </p>
 
   </div>
@@ -133,7 +132,7 @@
       <p class="w3-left-align" style="line-height:200%">
         I have two teaching assistance experiences in my junior year. The main responsibilities are: holding a weekly discussion session for students to help them learn course materials and finish discussion sheets, grading weekly homework and exams, holding weekly office hour to provide supports to students.
       </p>
-      <h5><strong>Math 241: Calculus Ⅲ (Fall 2020)</strong></h5>
+      <h5 style="color: #447ec9"><strong>Math 241: Calculus Ⅲ (Fall 2020)</strong></h5>
         <li>
             Instructor:
             Thomas Honold, ZJU-UIUC Institute
@@ -142,7 +141,7 @@
             Main Cotents: Basic Linear Algebra, Vector Functions, Function of
             Multi-Variables, Vector Fields.
         </li>
-      <h5><strong>ECE 120: Intro to Computing (Spring 2021)</strong></h5>
+      <h5 style="color: #447ec9"><strong>ECE 120: Intro to Computing (Spring 2021)</strong></h5>
         <li>
             Instructor:
             <a style="color: #447ec9" href="http://www.ncsa.illinois.edu/People/kindr/" target="_blank">Volodymyr Kindratenko</a>, UIUC
@@ -151,6 +150,19 @@
             Main Cotents: Bit Representation, C Programming, Transistors to
             Circuits, Finite State Machines, LC-3 (Little Computer) and Programming.
         </li>
+  </div>
+
+  <div class="w3-container w3-padding-32" id="life">
+    <h3><strong>Life</strong></h3>
+      <p class="w3-left-align" style="line-height:200%">
+        My life is colorful! I am a crazy sports fun, and I especially love basketball (watching NBA) and football. I have participated in lots of basketball and football competitions in my university life. I won the <strong>champion</strong> of Zhejiang University Sanhao Football Cup (三好杯) in 2019 summer, the <strong>champion</strong> of Zhejiang University International Campus Freshmen Football Cup (新生杯) in 2019 winter as the <strong>caption</strong> of ECE Football team, and the <strong>champion</strong> of Zhejiang University International Campus Canglang Basketball Cup (沧浪杯) in 2019 spring. What a wonderful year! There are also many other unforgettable experiences in the past three years such as the volunteering teaching in Guilin, Guangxi, China.
+      </p>
+      <h5 style="color: #447ec9"><strong>Sanhao Cup with My Wonderful Team</strong></h5>
+      <img style="width:31%;" src="images/sanhao1.jpg"> &nbsp <img style="width:31%;" src="images/sanhao2.jpg"> &nbsp <img style="width:31%;" src="images/sanhao3.jpg"> 
+      <h5 style="color: #447ec9"><strong>Competitions at Beautiful International Campus</strong></h5>
+      <img style="width:31%;" src="images/intl1.jpg"> &nbsp <img style="width:31%;" src="images/intl2.jpg"> &nbsp <img style="width:31%;" src="images/intl3.jpg">
+      <h5 style="color: #447ec9"><strong>Volunteer Teaching in Guilin with Lovely Children</strong></h5>
+      <img style="width:31%;" src="images/vt1.jpg"> &nbsp <img style="width:31%;" src="images/vt2.jpg"> &nbsp <img style="width:31%;" src="images/vt3.jpg">
   </div>
 </div>
 
