@@ -1,0 +1,21 @@
+{
+    "title": "An efficient generative data imputation toolbox with adversarial learning",
+    "authors": [
+        "Yangyang Wu",
+        "Xiaoye Miao",
+        "Zilinghan Li",
+        "Shilan He",
+        "Xinkai Yuan",
+        "Jianwei Yin"
+    ],
+    "venue": "ICDE 2023",
+    "tldr": "The dramatically increasing volume of incomplete data makes the imputation models computationally infeasible in many real-life applications. In this demonstration, we propose a scalable and extendible data imputation toolbox, SEMI, to deal with large-scale incomplete data imputation efficiently and visually. SEMI consists of three modules: data preprocessing, data imputation, and post-imputation prediction. It is built upon SCIS, a scalable imputation system, to significantly speed up the training of generative adversarial imputation models under accuracy-guarantees for large-scale incomplete data. Using a public real-world large-scale incomplete weather dataset, we demonstrate that, SEMI is capable of assisting users to efficiently address real-life large-scale imputation issues, from the aspects of high-efficient imputation system, user-friendly performance visualization, and easy-to-use interaction operation.",
+    "bibtex": "wu2023efficient",
+    "poster": null,
+    "slides": null,
+    "publisher": null,
+    "year": 2023,
+    "month": 4,
+    "selected": false,
+    "category": "others"
+}

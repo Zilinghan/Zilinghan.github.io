@@ -1,0 +1,29 @@
+{
+    "title": "Appflx: Providing Privacy-Preserving Cross-Silo Federated Learning as a Service",
+    "authors": [
+        "Zilinghan Li",
+        "Shilan He",
+        "Pranshu Chaturvedi",
+        "Trung-Hieu Hoang",
+        "Minseok Ryu",
+        "EA Huerta",
+        "Volodymyr Kindratenko",
+        "Jordan Fuhrman",
+        "Maryellen Giger",
+        "Ryan Chard",
+        "Kibaek Kim",
+        "Ravi Madduri"
+    ],
+    "venue": "e-Science 2023",
+    "tldr": "Cross-silo privacy-preserving federated learning (PPFL) is a powerful tool to collaboratively train robust and generalized machine learning (ML) models without sharing sensitive (e.g., healthcare of financial) local data. To ease and accelerate the adoption of PPFL, we introduce APPFLx, a ready-to-use platform that provides privacy-preserving cross-silo federated learning as a service. APPFLx employs Globus authentication to allow users to easily and securely invite trustworthy collaborators for PPFL, implements several synchronous and asynchronous FL algorithms, streamlines the FL experiment launch process, and enables tracking and visualizing the life cycle of FL experiments, allowing domain experts and ML practitioners to easily orchestrate and evaluate cross-silo FL under one platform. APPFLx is available online at https://appflx.link",
+    "paper": "publications/li2023appflx.pdf",
+    "bibtex": "li2023appflx",
+    "website": "https://service.appfl.ai",
+    "poster": null,
+    "slides": null,
+    "publisher": null,
+    "year": 2023,
+    "month": 10,
+    "selected": true,
+    "category": "fl"
+}

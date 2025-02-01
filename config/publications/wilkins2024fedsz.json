@@ -1,0 +1,26 @@
+
+{
+    "title": "FedSZ: Leveraging error-bounded lossy compression for federated learning communications",
+    "authors": [
+        "Grant Wilkins",
+        "Sheng Di",
+        "Jon C Calhoun",
+        "Zilinghan Li",
+        "Kibaek Kim",
+        "Robert Underwood",
+        "Richard Mortier",
+        "Franck Cappello"
+    ],
+    "venue": "ICDCS 2024",
+    "tldr": "With the promise of federated learning (FL) to allow for geographically-distributed and highly personalized services, the efficient exchange of model updates between clients and servers becomes crucial. FL, though decentralized, often faces communication bottlenecks, especially in resource-constrained scenarios. Existing data compression techniques like gradient sparsification, quantization, and pruning offer some solutions, but may compromise model performance or necessitate expensive retraining. In this paper, we introduce FedSZ, a specialized lossy-compression algorithm designed to minimize the size of client model updates in FL. FedSZ incorporates a comprehensive compression pipeline featuring data partitioning, lossy and lossless compression of model parameters and metadata, and serialization. We evaluate FedSZ using a suite of error-bounded lossy compressors, ultimately finding SZ2 to be the most effective across various model architectures and datasets including AlexNet, MobileNetV2, ResNet50, CIFAR-10, Caltech101, and Fashion-MNIST. Our study reveals that a relative error bound 0.01 achieves an optimal tradeoff, compressing model states between 5.55-12.61x while maintaining inference accuracy within < 0.5 % of uncompressed results. Additionally, the runtime overhead of FedSZ is < 4.7% or between of the wall-clock communication-round time, a worthwhile trade-off for reducing network transfer times by an order of magnitude for networks bandwidths < 350Mbps. Intriguingly, we also find that the error introduced by FedSZ could potentially serve as a source of differentially private noise, opening up new avenues for privacy-preserving FL.",
+    "paper": "publications/wilkins2024fedsz.pdf",
+    "bibtex": "wilkins2024fedsz",
+    "code": null,
+    "website": null,
+    "poster": null,
+    "slides": null,
+    "year": 2024,
+    "month": 7,
+    "selected": false,
+    "category": "fl"
+}

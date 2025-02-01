@@ -1,0 +1,19 @@
+{
+    "title": "Activematch: end-to-end semi-supervised active representation learning",
+    "authors": [
+        "Xinkai Yuan",
+        "Zilinghan Li",
+        "Gaoang Wang"
+    ],
+    "venue": "ICIP 2023",
+    "tldr": "Semi-supervised learning (SSL) is an efficient framework that can train models with both labeled and unlabeled data, but may generate ambiguous and non-distinguishable representations when lacking adequate labeled samples. With human-in-the-loop, active learning can iteratively select informative unlabeled samples for labeling and training to improve the performance in the SSL framework. However, most existing active learning approaches rely on pre-trained features, which is not suitable for end-to-end learning. To deal with the drawbacks of SSL, in this paper, we propose a novel end-to-end representation learning method, namely ActiveMatch, which combines SSL with contrastive learning and active learning to fully leverage the limited labels. Starting from a small amount of labeled data with unsupervised contrastive learning as a warm-up, ActiveMatch then combines SSL and supervised contrastive learning, and actively selects the most representative samples for labeling during the training, resulting in better representations towards the classification. Compared with MixMatch and FixMatch with the same amount of labeled data, we show that ActiveMatch achieves the state-of-the-art performance, with 89.24% accuracy on CIFAR-10 with 100 collected labels, and 92.20% accuracy with 200 collected labels.",
+    "bibtex": "yuan2022activematch",
+    "paper": "publications/yuan2022activematch.pdf",
+    "poster": null,
+    "slides": null,
+    "publisher": null,
+    "year": 2022,
+    "month": 10,
+    "selected": false,
+    "category": "others"
+}

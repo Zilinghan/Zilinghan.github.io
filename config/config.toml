@@ -1,0 +1,44 @@
+[build]
+build_dir = "./_site"
+templates_dir = "./templates"
+static_dir = "./static"
+
+[overview]
+name = "Zilinghan Li"
+titles = ["Machine Learning Engineer"]
+headshot = "images/headshot.jpg"
+contacts = [
+    { name = "email", link = "mailto:zilinghan.li@anl.gov"},
+    { name = "github", link = "https://github.com/Zilinghan" },
+    { name = "linkedin", link = "https://www.linkedin.com/in/zilinghanli/" },
+    { name = "scholar", link = "https://scholar.google.com/citations?user=4JbL29YAAAAJ&hl=en&oi=ao" },
+]
+analytics = "G-RP37QLH20F"
+source = "https://github.com/Zilinghan/Zilinghan.github.io"
+text = """
+Hello! I am a Machine Learning Engineer at the Data Science Learning Division, Argonne National Laboratory, working under <a href="https://scholar.google.com/citations?user=1NoINjMAAAAJ&hl=en" target="_blank">Ravi Madduri</a>. I am interested in machine learning and deep learning for biomedicine and science, federated learning, and scaling machine learning workflow on High-Performance Computing environments. I receivd my Master of Science degree in Computer Science from the University of Illinois at Urbana-Champaign, where I worked with <a href="https://scholar.google.com/citations?user=Cy81VegAAAAJ&hl=en" target="_blank">Prof. Volodymyr Kindratenko</a>. I also previously interned at Amazon Web Services.
+"""
+
+[research]
+sections = [
+    { name = "AI for Science and Biomedicine", text = """This is the field that I am putting most of my effort on learning currently. My main interests lie in the field of developing state-of-the-art foundation models for different biomedicine problems, and building multi-modal bio AI models. I am also actively involved in the <a href="https://auroragpt.anl.gov/" target="_blank">AuroraGPT</a> project, which aims to developing LLM for general science.""" },
+    { name = "Federated Learning", text = """This is the field that I spent most of my time in the past few years, and I techinically lead the development of Argonne's federated learning framework, Advanced Privacy-Preserving Federated Learning, <a href="https://github.com/APPFL/APPFL">APPFL</a>. As our framework is comprehensive, I actually worked on various aspects of federated learning myself, but I am mostly interested in building the infrastructure to support the federated training of foundation models."""  },
+    { name = "Scalable Learning", text = "My company, Argonne, is home of several supercomputers (Polaris, Sophia, Aurora, etc.), so I am also interested in scaling deep learning workflow on supercomputers to support training and inference of large AI models and speed them up."},
+]
+
+[projects]
+github = "https://github.com/Zilinghan/"
+links = [
+    { name = "APPFL", link = "https://github.com/APPFL/APPFL", description = "Advanced Privacy-Preserving Federated Learning framework" },
+    { name = "APPFLx", link = "https://appflx.link/", description = "Federated Learning as a Service" },
+    { name = "FedCompass", link = "https://github.com/APPFL/FedCompass", description = "Federated Learning with Computing Power Aware Scheduler" },
+    { name = "SciCode", link = "https://github.com/scicode-bench/SciCode", description = "A benchmark that challenges language models to code solutions for scientific problems" },
+]
+
+[publications]
+bibtex = "publications/zilinghan.bib"
+publications_dir = "./config/publications"
+
+[presentations]
+presentations_dir = "./config/presentations"
+

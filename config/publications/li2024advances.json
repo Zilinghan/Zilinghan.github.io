@@ -1,0 +1,25 @@
+{
+    "title": "Advances in APPFL: A Comprehensive and Extensible Federated Learning Framework",
+    "authors": [
+        "Zilinghan Li",
+        "Shilan He",
+        "Ze Yang",
+        "Minseok Ryu",
+        "Kibaek Kim",
+        "Ravi Madduri"
+    ],
+    "venue": "arXiv preprint",
+    "tldr": "Federated learning (FL) is a distributed machine learning paradigm enabling collaborative model training while preserving data privacy. In today's landscape, where most data is proprietary, confidential, and distributed, FL has become a promising approach to leverage such data effectively, particularly in sensitive domains such as medicine and the electric grid. Heterogeneity and security are the key challenges in FL, however; most existing FL frameworks either fail to address these challenges adequately or lack the flexibility to incorporate new solutions. To this end, we present the recent advances in developing APPFL, an extensible framework and benchmarking suite for federated learning, which offers comprehensive solutions for heterogeneity and security concerns, as well as user-friendly interfaces for integrating new algorithms or adapting to new applications. We demonstrate the capabilities of APPFL through extensive experiments evaluating various aspects of FL, including communication efficiency, privacy preservation, computational performance, and resource utilization. We further highlight the extensibility of APPFL through case studies in vertical, hierarchical, and decentralized FL. APPFL is open-sourced at https://github.com/APPFL/APPFL.",
+    "paper": "publications/li2024advances.pdf",
+    "bibtex": "li2024advances",
+    "code": "https://github.com/APPFL/APPFL",
+    "website": "https://appfl.ai",
+    "poster": null,
+    "slides": null,
+    "preprint": "https://arxiv.org/abs/2409.11585",
+    "publisher": null,
+    "year": 2024,
+    "month": 9,
+    "selected": false,
+    "category": "fl"
+}

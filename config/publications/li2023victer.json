@@ -1,0 +1,21 @@
+{
+    "title": "ViCTer: A semi-supervised video character tracker",
+    "authors": [
+        "Zilinghan Li",
+        "Xiwei Wang",
+        "Zhenning Zhang",
+        "Volodymyr Kindratenko"
+    ],
+    "venue": "Machine Learning with Applications",
+    "tldr": "Video character tracking problem refers to tracking certain characters of interest in the video and returning the appearing time slots for those characters. Solutions to this problem can be applied in various video-analysis-related areas, such as movie analysis and automatic video clipping. However, there are very few researches investigating this problem and there are no existing relevant benchmark datasets available. In this paper, we design a novel model to solve this problem by combining a semi-supervised face recognition network and a multi-human tracker. For the face recognition network, we propose a semi-supervised learning method to fully leverage the unlabeled images in the video, thus reducing the required number of labeled face images. Triplet loss is also used during the training to better distinguish among inter-class samples. However, a single face recognition network is insufficient for video character tracking since people do not always show their frontal faces, or sometimes their faces are blocked by some obstacles. Therefore, a multi-human tracker is integrated into the model to address those problems. Additionally, we collect a dataset for the video character tracking problem, Character Face in Video, which can support various experiments for evaluating video character tracker performance. Experiments show that the proposed semi-supervised face recognition model can achieve more than 98.5% recognition accuracy, and our video character tracker can track in near-real-time and achieve 70%~80% average intersection-over-union tracking accuracy on the dataset.",
+    "paper": "publications/li2023victer.pdf",
+    "bibtex": "li2023victer",
+    "code": "https://github.com/Zilinghan/ViCTer",
+    "poster": null,
+    "slides": null,
+    "publisher": null,
+    "year": 2023,
+    "month": 6,
+    "selected": false,
+    "category": "others"
+}

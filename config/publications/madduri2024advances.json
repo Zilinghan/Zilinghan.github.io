@@ -1,0 +1,25 @@
+{
+    "title": "Advances in Privacy Preserving Federated Learning to Realize a Truly Learning Healthcare System",
+    "authors": [
+        "Ravi Madduri",
+        "Zilinghan Li",
+        "Tarak Nandi",
+        "Kibaek Kim",
+        "Miseok Ryu",
+        "Alex Rodriguez"
+    ],
+    "venue": "TPS-ISA 2024",
+    "tldr": "The concept of a learning healthcare system (LHS) envisions a self-improving network where multimodal data from patient care are continuously analyzed to enhance future healthcare outcomes. However, realizing this vision faces significant challenges in data sharing and privacy protection. Privacy-Preserving Federated Learning (PPFL) is a transformative and promising approach that has the potential to address these challenges by enabling collaborative learning from decentralized data while safeguarding patient privacy. This paper proposes a vision for integrating PPFL into the healthcare ecosystem to achieve a truly LHS as defined by the Institute of Medicine (IOM) Roundtable.",
+    "paper": "publications/madduri2024advances.pdf",
+    "bibtex": "madduri2024advances",
+    "code": null,
+    "website": null,
+    "poster": null,
+    "slides": "slides/tps-slides.pdf",
+    "preprint": "https://arxiv.org/abs/2409.19756",
+    "publisher": null,
+    "year": 2024,
+    "month": 11,
+    "selected": false,
+    "category": "fl"
+}

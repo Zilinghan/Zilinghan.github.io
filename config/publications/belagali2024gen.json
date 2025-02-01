@@ -1,0 +1,29 @@
+{
+    "title": "Gen-SIS: Generative Self-augmentation Improves Self-supervised Learning",
+    "authors": [
+        "Varun Belagali",
+        "Srikar Yellapragada",
+        "Alexandros Graikos",
+        "Saarthak Kapse",
+        "Zilinghan Li",
+        "Tarak Nath Nandi",
+        "Ravi Madduri",
+        "Prateek Prasanna",
+        "Joel Saltz",
+        "Dimitris Samaras"
+    ],
+    "venue": "arXiv preprint",
+    "tldr": "Self-supervised learning (SSL) methods have emerged as strong visual representation learners by training an image encoder to maximize similarity between features of different views of the same image. To perform this view-invariance task, current SSL algorithms rely on hand-crafted augmentations such as random cropping and color jittering to create multiple views of an image. Recently, generative diffusion models have been shown to improve SSL by providing a wider range of data augmentations. However, these diffusion models require pre-training on large-scale image-text datasets, which might not be available for many specialized domains like histopathology. In this work, we introduce Gen-SIS, a diffusion-based augmentation technique trained exclusively on unlabeled image data, eliminating any reliance on external sources of supervision such as text captions. We first train an initial SSL encoder on a dataset using only hand-crafted augmentations. We then train a diffusion model conditioned on embeddings from that SSL encoder. Following training, given an embedding of the source image, this diffusion model can synthesize its diverse views. We show that these `self-augmentations', i.e. generative augmentations based on the vanilla SSL encoder embeddings, facilitate the training of a stronger SSL encoder. Furthermore, based on the ability to interpolate between images in the encoder latent space, we introduce the novel pretext task of disentangling the two source images of an interpolated synthetic image. We validate Gen-SIS's effectiveness by demonstrating performance improvements across various downstream tasks in both natural images, which are generally object-centric, as well as digital histopathology images, which are typically context-based.",
+    "paper": "publications/belagali2024gen.pdf",
+    "bibtex": "belagali2024gen",
+    "code": null,
+    "website": "https://histodiffusion.github.io/docs/publications/gensis/",
+    "poster": null,
+    "slides": null,
+    "preprint": "https://arxiv.org/abs/2412.01672",
+    "publisher": null,
+    "year": 2024,
+    "month": 12,
+    "selected": false,
+    "category": "science"
+}
