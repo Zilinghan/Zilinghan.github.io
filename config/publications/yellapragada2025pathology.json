@@ -1,0 +1,27 @@
+{
+    "title": "Pathology Image Compression with Pre-trained Autoencoders",
+    "authors": [
+        "Srikar Yellapragada",
+        "Alexandros Graikos",
+        "Kostas Triaridis",
+        "Zilinghan Li",
+        "Tarak Nath Nandi",
+        "Ravi K Madduri",
+        "Prateek Prasanna",
+        "Joel Saltz",
+        "Dimitris Samaras"
+    ],
+    "venue": "arXiv preprint",
+    "tldr": "The growing volume of high-resolution Whole Slide Images in digital histopathology poses significant storage, transmission, and computational efficiency challenges. Standard compression methods, such as JPEG, reduce file sizes but often fail to preserve fine-grained phenotypic details critical for downstream tasks. In this work, we repurpose autoencoders (AEs) designed for Latent Diffusion Models as an efficient learned compression framework for pathology images. We systematically benchmark three AE models with varying compression levels and evaluate their reconstruction ability using pathology foundation models. We introduce a fine-tuning strategy to further enhance reconstruction fidelity that optimizes a pathology-specific learned perceptual metric. We validate our approach on downstream tasks, including segmentation, patch classification, and multiple instance learning, showing that replacing images with AE-compressed reconstructions leads to minimal performance degradation. Additionally, we propose a K-means clustering-based quantization method for AE latents, improving storage efficiency while maintaining reconstruction quality. We provide the weights of the fine-tuned autoencoders at https://huggingface.co/collections/StonyBrook-CVLab/pathology-fine-tuned-aes-67d45f223a659ff2e3402dd0.",
+    "paper": "publications/yellapragada2025pathology.pdf",
+    "bibtex": "yellapragada2025pathology",
+    "code": null,
+    "poster": null,
+    "slides": null,
+    "preprint": "https://arxiv.org/abs/2503.11591",
+    "publisher": null,
+    "year": 2025,
+    "month": 3,
+    "selected": false,
+    "category": "science"
+}
